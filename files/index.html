@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Химия Аромата — Проект по химии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="smoke-bg">
+    <div class="smoke s1"></div>
+    <div class="smoke s2"></div>
+    <div class="smoke s3"></div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <p class="hero-sub">Проект по химии · 9 класс</p>
+    <h1 class="hero-title">Химия<br><em>Аромата</em></h1>
+    <p class="hero-desc">Нажмите на флакон — откройте рецепт и науку за запахом</p>
+    <a href="#shelf" class="hero-cta">Исследовать ↓</a>
+  </header>
+
+  <!-- Shelf of perfume bottles -->
+  <section class="shelf" id="shelf">
+    <div class="shelf-title">Коллекция ароматов</div>
+    <div class="bottles-row">
+
+      <div class="bottle-wrap" data-perfume="rose">
+        <div class="bottle b-rose">
+          <div class="bottle-cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">Rose</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="bottle-name">Роза</div>
+      </div>
+
+      <div class="bottle-wrap" data-perfume="lavender">
+        <div class="bottle b-lavender">
+          <div class="bottle-cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">Lavande</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="bottle-name">Лаванда</div>
+      </div>
+
+      <div class="bottle-wrap" data-perfume="citrus">
+        <div class="bottle b-citrus">
+          <div class="bottle-cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">Citrus</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="bottle-name">Цитрус</div>
+      </div>
+
+      <div class="bottle-wrap" data-perfume="jasmine">
+        <div class="bottle b-jasmine">
+          <div class="bottle-cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">Jasmin</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="bottle-name">Жасмин</div>
+      </div>
+
+      <div class="bottle-wrap" data-perfume="cedar">
+        <div class="bottle b-cedar">
+          <div class="bottle-cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">Cedar</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="bottle-name">Кедр</div>
+      </div>
+
+      <div class="bottle-wrap" data-perfume="armenia">
+        <div class="bottle b-armenia">
+          <div class="bottle-cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">Ararat</span>
+          </div>
+          <div class="bottle-base"></div>
+        </div>
+        <div class="bottle-name">Арарат</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal overlay -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Science sections -->
+  <section class="science-section" id="science">
+    <div class="science-inner">
+
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Пирамида аромата</h2>
+      </div>
+      <div class="pyramid-wrap">
+        <div class="pyramid">
+          <div class="pyr-tier pyr-top">
+            <div class="pyr-block">
+              <div class="pyr-icon">▲</div>
+              <div class="pyr-label">Верхние ноты</div>
+              <div class="pyr-sub">5–15 минут · цитрус, зелень</div>
+              <div class="pyr-examples">Лимонен · Линалоол · Ментол</div>
+            </div>
+          </div>
+          <div class="pyr-tier pyr-mid">
+            <div class="pyr-block">
+              <div class="pyr-icon">◆</div>
+              <div class="pyr-label">Ноты сердца</div>
+              <div class="pyr-sub">15–30 мин → несколько часов</div>
+              <div class="pyr-examples">Роза · Жасмин · Корица</div>
+            </div>
+          </div>
+          <div class="pyr-tier pyr-base">
+            <div class="pyr-block">
+              <div class="pyr-icon">■</div>
+              <div class="pyr-label">Базовые ноты</div>
+              <div class="pyr-sub">До 24 часов · шлейф</div>
+              <div class="pyr-examples">Сандал · Мускус · Ваниль · Ладан</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Молекулы запаха</h2>
+      </div>
+      <div class="molecules-grid">
+        <div class="mol-card">
+          <div class="mol-formula">C₁₀H₁₆</div>
+          <div class="mol-name">Лимонен</div>
+          <div class="mol-source">Цедра цитрусовых</div>
+          <div class="mol-class">Монотерпен</div>
+        </div>
+        <div class="mol-card">
+          <div class="mol-formula">C₁₀H₂₀O</div>
+          <div class="mol-name">Ментол</div>
+          <div class="mol-source">Мята перечная</div>
+          <div class="mol-class">Терпеноид-спирт</div>
+        </div>
+        <div class="mol-card">
+          <div class="mol-formula">C₁₀H₁₆O</div>
+          <div class="mol-name">Камфора</div>
+          <div class="mol-source">Камфорное дерево</div>
+          <div class="mol-class">Терпеноид-кетон</div>
+        </div>
+        <div class="mol-card">
+          <div class="mol-formula">C₁₀H₈O</div>
+          <div class="mol-name">Линалоол</div>
+          <div class="mol-source">Лаванда, ландыш</div>
+          <div class="mol-class">Терпеновый спирт</div>
+        </div>
+        <div class="mol-card">
+          <div class="mol-formula">C₁₀H₁₂O₂</div>
+          <div class="mol-name">Эвгенол</div>
+          <div class="mol-source">Гвоздика, базилик</div>
+          <div class="mol-class">Фенилпропаноид</div>
+        </div>
+        <div class="mol-card">
+          <div class="mol-formula">C₈H₁₀O₃</div>
+          <div class="mol-name">Ванилин</div>
+          <div class="mol-source">Ваниль</div>
+          <div class="mol-class">Альдегид-бензоид</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Как получают эфирные масла</h2>
+      </div>
+      <div class="methods-grid">
+        <div class="method-card">
+          <div class="method-icon">💧</div>
+          <div class="method-title">Дистилляция паром</div>
+          <div class="method-text">Растение + вода нагреваются. Пар уносит летучие молекулы масла, затем охлаждается — масло отделяется от воды. Подходит для большинства растений.</div>
+          <div class="method-formula">Растение + H₂O + тепло → (H₂O + масло)пар → масло + вода</div>
+        </div>
+        <div class="method-card">
+          <div class="method-icon">🌸</div>
+          <div class="method-title">Анфлераж</div>
+          <div class="method-text">Лепестки укладывают на жир, который впитывает аромат. Затем жир обрабатывают спиртом. Старинный метод для нежных цветов — жасмина, розы.</div>
+          <div class="method-formula">Цветок + жир → конкрет → спирт → абсолют</div>
+        </div>
+        <div class="method-card">
+          <div class="method-icon">🍋</div>
+          <div class="method-title">Холодный отжим</div>
+          <div class="method-text">Только для цитрусовых. Кожуру давят механически — масло выдавливается без нагрева. Сохраняются самые летучие «свежие» ноты.</div>
+          <div class="method-formula">Кожура + давление → масло (без термораспада)</div>
+        </div>
+        <div class="method-card">
+          <div class="method-icon">⚗️</div>
+          <div class="method-title">Экстракция</div>
+          <div class="method-text">Сырьё обрабатывают растворителем (гексан, CO₂). Растворитель испаряют — получают конкрет. Используется для дорогих и редких цветов.</div>
+          <div class="method-formula">Растение + растворитель → конкрет → эфирное масло</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Армения и парфюмерия</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">XIII–VI вв. до н.э.</div>
+          <div class="tl-content">
+            <div class="tl-title">Урарту</div>
+            <div class="tl-text">Курильницы из бронзы и глины. Ладан и мирра привозились из Аравии. Запахи — часть религиозных ритуалов и бальзамирования знати.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">I в. до н.э.</div>
+          <div class="tl-content">
+            <div class="tl-title">Тигран Великий · Шёлковый путь</div>
+            <div class="tl-text">Армения — транзитный хаб восточных ароматов. В Арташате — мастерские по перегонке розовой воды. Торговля нардом, кассией, ладаном.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">V–XVII вв.</div>
+          <div class="tl-content">
+            <div class="tl-title">Монастырская парфюмерия</div>
+            <div class="tl-text">Монастыри Гошаванк, Татев, Гегард выращивали розы и лаванду. Амирдовлат Амасиаци (XII в.) описал дистилляцию ароматов. Ладан — обязателен в армянской церкви.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">XIX–XX вв.</div>
+          <div class="tl-content">
+            <div class="tl-title">Тифлис · Фабрика «Айвазов и Ко»</div>
+            <div class="tl-text">Армянские мастера владели большинством парфюмерных лавок Тифлиса. Производились духи «Фиалка», «Роза», «Ландыш» по французским технологиям.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Сегодня</div>
+          <div class="tl-content">
+            <div class="tl-title">Nairian · Крафт и ниша</div>
+            <div class="tl-text">Нишевые бренды на основе местных трав: лаванда, чабрец, душица, гранат, абрикос, инжир. Мастер-классы по дистилляции розы в Верин Геташене.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Проект по химии · 9 класс · 2025</p>
+    <p class="footer-sub">Химия запаха: от терпенов до лимбической системы</p>
+  </footer>
+
+  <script src="perfumes.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
